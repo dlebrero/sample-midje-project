@@ -4,6 +4,6 @@
 ;;; someone who was used to a Lisp in which an empty list is equal to
 ;;; nil.
 (defn first-element [sequence default]
-  (if-not (nil? sequence)
+  (if-not (seq sequence)
     default
     (first sequence)))
